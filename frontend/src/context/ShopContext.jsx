@@ -11,7 +11,7 @@ export const ShopContext = createContext();
 const ShopContextProvider = (props)=>{
     const currency = '₹';
     const delivery_fee = 50;
-    const backendUrl = 'http://localhost:4000'
+    const backendUrl = 'ecomm-backend-9ibum5m7o-gurus-projects-e48d730a.vercel.app'
     const [search,setSearch] = useState('');
     const [showSearch,setShowSearch] = useState(false);
     const [cartItems,setCartItems] = useState({});
