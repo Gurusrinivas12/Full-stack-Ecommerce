@@ -8,23 +8,27 @@ import productRouter from './routes/productRoute.js'
 import cartRouter from './routes/cartRoute.js'
 import orderRouter from './routes/orderRoute.js'
 
-//App config
 const app = express()
-const port = process.env.PORT || 4000
 connectDB()
 connectCloudinary()
 
-//Middlewares
 app.use(express.json())
 app.use(cors())
 
-// API endpoints
-app.use('/api/user/',userRouter)
-app.use('/api/product',productRouter)
-app.use('/api/cart',cartRouter)
-app.use('/api/order',orderRouter)
-app.get('/',(req,res)=>{
+app.use('/api/user', userRouter)
+app.use('/api/product', productRouter)
+app.use('/api/cart', cartRouter)
+app.use('/api/order', orderRouter)
+
+app.get('/', (req, res) => {
     res.send("API Working")
 })
 
-app.listen(port,()=>{console.log("Server started on port: "+port)})
+// ❗️ Add this middleware to catch errors
+app.use((err, req, res, next) => {
+    console.error("SERVER ERROR:", err)  // Log error in Vercel
+    res.status(500).json({ message: "Internal Server Error" })
+})
+
+// ❗️ Change from app.listen() to export for Vercel
+export default app
