@@ -2,26 +2,26 @@
 A complete e-commerce platform built using the MERN (MongoDB, Express, React, Node.js) stack, featuring an admin panel, backend API, and frontend store.
 
 ## Project Structure
-/admin    - Admin dashboard for managing products, orders, and users
-/backend  - Express.js backend with REST API, authentication, and database handling
-/frontend - React.js frontend for users to browse and purchase products
+/admin    - Admin dashboard for managing products, orders, and users<br/>
+/backend  - Express.js backend with REST API, authentication, and database handling<br/>
+/frontend - React.js frontend for users to browse and purchase products<br/>
 
 ## Features
-✅ User authentication (JWT-based)
-✅ Admin dashboard for product & order management
-✅ Product catalog with categories & filters
-✅ Shopping cart & checkout process
-✅ Payment gateway integration (e.g., Stripe)
-✅ Order tracking & status updates
-✅ Responsive UI with React.js
-✅ Secure API with Express & MongoDB
+✅ User authentication (JWT-based)<br/>
+✅ Admin dashboard for product & order management<br/>
+✅ Product catalog with categories & filters<br/>
+✅ Shopping cart & checkout process<br/>
+✅ Payment gateway integration (e.g., Stripe)<br/>
+✅ Order tracking & status updates<br/>
+✅ Responsive UI with React.js<br/>
+✅ Secure API with Express & MongoDB<br/>
 
 ##  Tech Stack
-Frontend: React.js, Redux Toolkit, TailwindCSS
-Backend: Node.js, Express.js, MongoDB (Mongoose)
-Authentication: JWT, bcrypt
-Payment Integration: Stripe / Razorpay
-Deployment: Vercel (Frontend), Render / AWS (Backend)
+Frontend: React.js, Redux Toolkit, TailwindCSS<br/>
+Backend: Node.js, Express.js, MongoDB (Mongoose)<br/>
+Authentication: JWT, bcrypt<br/>
+Payment Integration: Stripe / Razorpay<br/>
+Deployment: Vercel (Frontend), Render / AWS (Backend)<br/>
 
 ## Screenshots
 ![image](https://github.com/user-attachments/assets/1238ab7f-d0c1-41e9-a00e-27cca06157dd)
